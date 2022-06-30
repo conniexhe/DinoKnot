@@ -434,7 +434,7 @@ int main (int argc, char *argv[]) {
 
 	//set up for RNA so we can use this for building hotspot
 	if(!structure1Found || !structure2Found){
-		char config_file[200];
+		char config_file[300];
 		strcpy (config_file, SIMFOLD_HOME "/params/multirnafold.conf");
 		int dna_or_rna;
 		dna_or_rna = RNA;
