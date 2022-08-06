@@ -1,7 +1,0 @@
-/home/vagrant/host-mirror/cobra/DinoKnot/build/CMakeFiles/DinoKnot.dir
-/home/vagrant/host-mirror/cobra/DinoKnot/build/CMakeFiles/edit_cache.dir
-/home/vagrant/host-mirror/cobra/DinoKnot/build/CMakeFiles/rebuild_cache.dir
-/home/vagrant/host-mirror/cobra/DinoKnot/build/simfold/CMakeFiles/simfold.dir
-/home/vagrant/host-mirror/cobra/DinoKnot/build/simfold/CMakeFiles/simfold_exec.dir
-/home/vagrant/host-mirror/cobra/DinoKnot/build/simfold/CMakeFiles/edit_cache.dir
-/home/vagrant/host-mirror/cobra/DinoKnot/build/simfold/CMakeFiles/rebuild_cache.dir
