@@ -1,7 +1,7 @@
 # Ian Wark July 6 2017
 
 cmake_minimum_required(VERSION 3.1)
-project(DinoKnot_multimodel)
+project(DinoKnot)
 
 # enable c++11
 set(CMAKE_CXX_STANDARD 11)
@@ -11,12 +11,12 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 # create simfold library
 add_subdirectory(simfold)
 
-set(DinoKnot_multimodel_SOURCE
-    W_final.h W_final.cpp 
-    pseudo_loop.h pseudo_loop.cpp 
-    V_final.h V_final.cpp 
+set(DinoKnot_SOURCE
+    W_final.h W_final.cpp
+    pseudo_loop.h pseudo_loop.cpp
+    V_final.h V_final.cpp
     VM_final.h VM_final.cpp
-    h_common.h h_common.cpp 
+    h_common.h h_common.cpp
     hfold_validation.h hfold_validation.cpp
     dinoknot.h DinoKnot.cpp
     Result.h Result.cpp
@@ -32,10 +32,10 @@ find_package (Threads)
 # set path for executable to be created
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_SOURCE_DIR})
 # create executables
-add_executable(DinoKnot_multimodel ${DinoKnot_multimodel_SOURCE})
+add_executable(DinoKnot ${DinoKnot_SOURCE})
 
 # link to simfold
-target_link_libraries(DinoKnot_multimodel LINK_PUBLIC simfold)
+target_link_libraries(DinoKnot LINK_PUBLIC simfold)
 
 # link to pthread
-target_link_libraries(DinoKnot_multimodel LINK_PUBLIC ${CMAKE_THREAD_LIBS_INIT})
+target_link_libraries(DinoKnot LINK_PUBLIC ${CMAKE_THREAD_LIBS_INIT})

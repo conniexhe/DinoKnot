@@ -119,7 +119,7 @@ int main (int argc, char *argv[]) {
 	bool errorFound = false;
 	bool type1Found = false;
 	bool type2Found = false;
-	
+
 	bool hotspot_only = false;
 	char* hotspotDir;
 	hotspotDir = (char*) malloc(sizeof(char) * 1000);
@@ -263,7 +263,7 @@ int main (int argc, char *argv[]) {
 					perror("Write to file error:");
 					exit(4);
 				}
-				
+
 				outputPathFound = true;
 				break;
 			case 'e':
@@ -575,15 +575,15 @@ int main (int argc, char *argv[]) {
 }
 
 void printUsage(){
-	printf("\nUsage ./DinoKnot_multimodel --s1 <sequence1> --r2 <restricted_structure1> --s1 <sequence_2> --r2 <restricted_structure2> --t1 <type_for_sequence1> --t2 <type_for_sequence1> [-o </path/to/file>]\n");
+	printf("\nUsage DinoKnot --s1 <sequence1> --r2 <restricted_structure1> --s1 <sequence_2> --r2 <restricted_structure2> --t1 <type_for_sequence1> --t2 <type_for_sequence1> [-o </path/to/file>]\n");
 	printf("or\n");
-	printf("Usage ./HFold -i </path/to/file> --t1 <type_for_sequence1> --t2 <type_for_sequence1> [-o </path/to/file>]\n");
+	printf("Usage DinoKnot -i </path/to/file> --t1 <type_for_sequence1> --t2 <type_for_sequence1> [-o </path/to/file>]\n");
 	printf ("  Restricted structure symbols:\n");
 	printf ("    () restricted base pair\n");
 	printf ("    _ no restriction\n");
 	printf("Example:\n");
-	printf("./DinoKnot_multimodel --s1 \"GCAACGAUGACAUACAUCGCUAGUCGACGC\" --r1 \"(____________________________)\" --s2 \"GCAACGAUGACAUACAUCGCUAGUCGACGCGCAACGAUGACAUACAUCGCUAGUCGACGC\" --r2 \"(__________________________________________________________)\" --t1 RNA --t2 DNA\n");
-	printf("./DinoKnot_multimodel -i \"/home/username/Desktop/myinputfile.txt\" -o \"/home/username/Desktop/some_folder/outputfile.txt\"\n");
+	printf("DinoKnot --s1 \"GCAACGAUGACAUACAUCGCUAGUCGACGC\" --r1 \"(____________________________)\" --s2 \"GCAACGAUGACAUACAUCGCUAGUCGACGCGCAACGAUGACAUACAUCGCUAGUCGACGC\" --r2 \"(__________________________________________________________)\" --t1 RNA --t2 DNA\n");
+	printf("DinoKnot -i \"/home/username/Desktop/myinputfile.txt\" -o \"/home/username/Desktop/some_folder/outputfile.txt\"\n");
 	printf("Please read README for more details\n");
 
 }
